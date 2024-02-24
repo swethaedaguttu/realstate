@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://img.freepik.com/free-photo/3d-model-residential-building_23-2150761206.jpg?t=st=1708604931~exp=1708608531~hmac=924907d3dd38caa7d953934eb0dc3357c3bf7d7b9afee3081ca22b0e2bca4f71&w=740');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff; /* Set text color to white for better readability on the background image */
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    main {
+      padding-top: 60px;
+    }
+
+    .card {
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Properties</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">About Us</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Contact</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control form-control-dark" placeholder="Search...">
+        </form>
+
+        <div class="text-end">
+          <a href="login.html"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+          <a href="signup.html"><button type="button" class="btn btn-warning">Sign-up</button></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="mt-5">Welcome to our Real Estate Page</h1>
+      <p class="lead">Explore our latest properties and find your dream home.</p>
+
+      <!-- Property listings -->
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://img.freepik.com/free-photo/beautiful-luxury-hotel-swimming-pool-resort-with-umbrella-chair_1339-3999.jpg?t=st=1708605385~exp=1708608985~hmac=716dbfdfe70ec338e41362281cfa8a19abeff9bd8464cfb944903e4827db69e9&w=996" class="card-img-top" alt="Property Image">
+            <div class="card-body">
+              <h5 class="card-title text-dark">Property 1</h5>
+              <p class="card-text text-dark">A villa is a type of house that was originally an ancient Roman upper class country house. Since its origins in the Roman villa, the idea and function of a villa have evolved considerably.In Italian, villa means "country house or farm."
+              </p>
+              <a href="#" class="btn btn-primary">View details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://img.freepik.com/free-photo/new-buildings-with-green-areas_1122-1533.jpg?t=st=1708605118~exp=1708608718~hmac=8685b1b2d241acbaac12f611de47bc0c3b3e52c5be34ced8b4dfafb9d59137f8&w=996" class="card-img-top" alt="Property Image">
+            <div class="card-body">
+              <h5 class="card-title text-dark">Property 2</h5>
+              <p class="card-text text-dark">An apartment is a residential unit that is part of one residential buildings,or a separate dwelling within a house with its own entrance, bathroom and kitchen. Apartments are typically one-story units within a multifamily.
+              </p>
+              <a href="#" class="btn btn-primary">View details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="https://img.freepik.com/free-photo/bird-s-eye-view-shanghai_1127-4040.jpg?t=st=1708605264~exp=1708608864~hmac=36c23c91ae628ddc2dc879d67203634e697e3753bbc2cc5e735e8288d9b9ae71&w=996" class="card-img-top" alt="Property Image">
+            <div class="card-body">
+              <h5 class="card-title text-dark">Property 3</h5>
+              <p class="card-text text-dark">Community houses can be a great way to promote social connections, reduce isolation. Explanation: A community house is a shared living space that is designed to promote community living and social interactions among its residents.</p>
+              <a href="#" class="btn btn-primary">View details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional content -->
+      <div class="row mt-5">
+          <div class="col-md-6"><br>
+            <h2>Why Choose Us?</h2>
+            <p class="text-dark">We are committed to providing the best real estate services to our clients. Here's why you should choose us:</p>
+            <ul>
+              <li>Experienced and knowledgeable agents</li>
+              <li>Wide range of properties to choose from</li>
+              <li>Excellent customer service</li>
+              <li>Transparent and fair dealing</li>
+            </ul>
+            <p>Whether you're buying, selling, or renting, we'll guide you through every step of the process to ensure a smooth and hassle-free experience.</p>
+            <a href="#" class="btn btn-secondary">Learn More</a>
+          </div>
+  
+        <div class="col-md-6">
+          <h2>Testimonials</h2>
+          <div class="card">
+            <div class="card-body text-dark">
+              <h5 class="card-title">John Doe</h5>
+              <p class="card-text">"Great experience with this real estate agency! Highly recommended!"</p>
+            </div>
+          </div>
+          <div class="card mt-3 text-dark">
+            <div class="card-body">
+              <h5 class="card-title">Jane Smith</h5>
+              <p class="card-text">"Found my dream home thanks to this website. Thank you!"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-center text-white p-3">
+    <div class="container">
+      <p>&copy; 2024 Real Estate Page. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
